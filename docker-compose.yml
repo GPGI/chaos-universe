@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    command: ["npm", "run", "dev"]
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=/api
+
+  backend:
+    image: python:3.11
+    working_dir: /app/backend
+    command: bash -c "pip install -r requirements.txt && uvicorn app:app --host 0.0.0.0 --port 5001"
+    volumes:
+      - .:/app
+    ports:
+      - "5001:5001"
+    environment:
+      - AVALANCHE_RPC=${AVALANCHE_RPC}
+      - LAND_CONTRACT=${LAND_CONTRACT}
+      - PINATA_JWT=${PINATA_JWT}
+      - PRIVATE_KEY=${PRIVATE_KEY}
+      - CHAIN_ID=${CHAIN_ID}

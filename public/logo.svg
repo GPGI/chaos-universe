@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Octopus/Star Logo Design -->
+  <!-- Center circle -->
+  <circle cx="100" cy="100" r="25" fill="white"/>
+  
+  <!-- 8 tentacles/arms radiating outward -->
+  <!-- Top -->
+  <path d="M 100 75 Q 100 40 100 20 Q 100 10 95 15 Q 90 20 95 30 Q 100 40 100 50 Z" fill="white"/>
+  
+  <!-- Top-Right -->
+  <path d="M 118 82 Q 140 60 155 45 Q 160 40 155 40 Q 150 40 145 50 Q 130 65 120 75 Z" fill="white"/>
+  
+  <!-- Right -->
+  <path d="M 125 100 Q 160 100 180 100 Q 190 100 185 95 Q 180 90 170 95 Q 160 100 150 100 Z" fill="white"/>
+  
+  <!-- Bottom-Right -->
+  <path d="M 118 118 Q 140 140 155 155 Q 160 160 155 160 Q 150 160 145 150 Q 130 135 120 125 Z" fill="white"/>
+  
+  <!-- Bottom -->
+  <path d="M 100 125 Q 100 160 100 180 Q 100 190 95 185 Q 90 180 95 170 Q 100 160 100 150 Z" fill="white"/>
+  
+  <!-- Bottom-Left -->
+  <path d="M 82 118 Q 60 140 45 155 Q 40 160 40 155 Q 40 150 50 145 Q 65 130 75 120 Z" fill="white"/>
+  
+  <!-- Left -->
+  <path d="M 75 100 Q 40 100 20 100 Q 10 100 15 95 Q 20 90 30 95 Q 40 100 50 100 Z" fill="white"/>
+  
+  <!-- Top-Left -->
+  <path d="M 82 82 Q 60 60 45 45 Q 40 40 40 45 Q 40 50 50 55 Q 65 70 75 80 Z" fill="white"/>
+  
+  <!-- Add some detail - inner circle -->
+  <circle cx="100" cy="100" r="15" fill="white" opacity="0.8"/>
+</svg>
